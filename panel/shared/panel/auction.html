@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- BEGIN: Head -->
+
+<head>
+	<meta http-equiv="Allow: GET, HEAD, PUT, POST, DELETE, OPTIONS">
+	<meta http-equiv="Access-Control-Allow-Origin: https://api.telegram.org">
+	<meta http-equiv="Access-Control-Allow-Methods: GET, HEAD, PUT, POST, DELETE, OPTIONS">
+	<meta http-equiv="Access-Control-Allow-Headers: origin, x-requested-with, authorization, x-www-form-urlencoded">
+	<meta http-equiv="Content-Type" content="application/json">
+	<meta http-equiv="Content-Type" content="x-www-form-urlencoded">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173014643-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-173014643-1');
+    </script>
+
+    <meta charset="utf-8">
+    <link href="dist/imgs/t2x-icon-2.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Next Generation Staking Platform">
+    <meta name="keywords" content="t2x, crypto, bitcoin, tron, staking, t2x token">
+    <meta name="author" content="LEFT4CODE">
+    <title>T2X - Auction</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <link rel="stylesheet" href="dist/custom.css" />
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+
+    <div class="shared-header" style="height: 86px;"></div>
+	<div class="transferHeader"></div>
+	<div class="maintenance"></div>
+    <div class="total-burned" style="text-align: center;  color:rgb(224, 15, 15); font-size: 20px; padding-bottom: 15px; margin-top: -10px;"></div>
+    
+    <nav class="top-nav nav-menu"></nav>
+    
+    <!-- BEGIN: Content -->
+    <div class="content" style="background: #27273d;box-shadow: 0px 0px 14px #15151e8a; overflow: hidden;">
+        <div class="col-span-12 lg:col-span-12 flex lg:block flex-col-reverse" style="padding-top: 20px; margin-bottom: 20px;">
+            <div class="intro-y inbox box mt-5" style="margin-top: 0px; background: #2e2e49;">
+
+                <div class="box-body col-span-12 lg:col-span-5 box"
+                    style="padding-top: 7px;padding-bottom: 7px; background: #3b3b59; border-radius: 9px;box-shadow: 0px 0px 18px #1d1f2fb0;">
+                        <!--<h2 style="color: #a0aec0; font-weight: 900; text-align: right; padding-right: 10px;">
+                            <button class="button w-24 bg-theme-1"
+                            style="width: auto; background: #3c206d; width: 100%;box-shadow: 0px 0px 10px #56378d;">Load All Auctions</button>
+                        </h2>-->
+                    <div class="p-5" style="padding: 0;">
+
+                        <div class="p-5" style="padding: 0; height:30vh">
+                            <div id="container-auctionchart" style="height: fit-content; min-width: 310px; color: #2e2e49"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="button-modal-enter-lobby" style=" background: #2f2f4c85;">
+            <div class="modal__content relative"
+                style="background: #1e1e30; border-radius: 10px; box-shadow: 0px 0px 30px #101018;"> <a
+                    data-dismiss="modal" href="javascript:;" class="absolute right-0 top-0 mt-3 mr-3"
+                    style="z-index: 10000000;"> <i data-feather="x" class="close-modal-a w-8 h-8 text-gray-500"></i>
+                </a>
+
+                <div class="intro-y col-span-12 sm:col-span-6" style="padding-top: 50px; padding: 50px 50px 20px;">
+                    <div style="font-weight: 900;color: #6d7076; padding-bottom: 3px;"> Amount of
+                        TRON
+                        to Enter:</div>
+                    <input type="number" class="auction-amount-entry input w-full border flex-1 stake-inp-amount"
+                        placeholder="1000.00" style="color: #abbac6; font-weight: 700;">
+                </div>
+
+                <div class="px-5 pb-8 text-center" style="padding: 20px;"> <button type="button" data-dismiss="modal"
+                        class="button w-24 bg-theme-1 text-white"
+                        style="width: auto; background: #673ab7; width: 100%;box-shadow: 0px 0px 10px #56378d;"
+                        onclick="enterLobbyFinal()">Enter
+                        the Auction</button> </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-4 xxl:col-span-3 flex lg:block flex-col-reverse">
+
+
+                <div class="intro-y box" style="margin-top: 22px;background: #2e2e49; margin-bottom: 30px;">
+                    <div class="box-header flex flex-col sm:flex-row items-center p-5 border-b border-gray-200"
+                        style=" border: 0;padding: 12px;">
+                        <h2 class="font-medium text-base mr-auto"
+                            style="color: #a0aec0; font-weight: 900; text-align: center;margin: 0px auto;font-size: 22px; text-shadow: 0px 0px 5px #969cb81f;">
+                            Unclaimed Auctions</h2>
+                    </div>
+                    <div class="p-5 border-gray-200" style="padding: 0; text-align: center;">
+							<table class="unclaimed-auctions" style="width: 100%; margin: 0px auto; text-align: center; color: #9da5b4c7;font-size: 15px;">
+								<tr style="border-bottom: 1px solid #000000;">
+									<td style="width: 33%; ">Day</td>
+									<td style="width: 33%; ">Unclaimed T2X</td>
+									<td style="width: 33%; ">Action</td>
+								</tr>
+							</table>	
+							<span class="unclaimed-placeholder" style="text-align: center; color: #9da5b4c7;font-size: 15px;">You currently have no unclaimed auctions.</span>
+                    </div>
+                </div>
+
+
+                <div class="intro-y box" style="margin-top: 22px;background: #2e2e49; margin-bottom: 30px;">
+                    <div class="box-header flex flex-col sm:flex-row items-center p-5 border-b border-gray-200"
+                        style=" border: 0;padding: 12px;">
+                        <h2 class="font-medium text-base mr-auto"
+                            style="color: #a0aec0; font-weight: 900; text-align: center;margin: 0px auto;font-size: 22px; text-shadow: 0px 0px 5px #969cb81f;">
+                            Referral Link</h2>
+                    </div>
+                    <div class="p-5" style="padding: 0;">
+                        <div class="border-gray-200">
+                           
+                            <div style="padding: 30px;">
+                                <span style="color: #9da5b4c7;font-size: 15px;">Your referrals will earn an extra 5% minted T2X tokens on their Stake End. As a referrer you will earn an extra 10%. There are no limits on number nor the amount of referrals that you can get.</span>
+                            </div>
+
+                            
+                            <div class="border-t border-gray-200 p-5" style="padding-left: 3%;padding-right: 3%; border: 0px; text-align: center;
+                            padding-bottom: 40px;">
+
+                                <input readonly value="--" type="text" class="ref-link input w-full border flex-1"
+                                    style="width: 55%;display: inline-block;vertical-align: top; font-weight: 900;
+                                        color: #9da6b494; height: 40px;">
+
+                                <a onclick="copyLinkToClipboard()" data-event="on-click" href="javascript:;" title="Copied!"
+                                    class="button w-24 inline-block mr-1 mb-2 bg-gray-200 text-gray-600 tooltip button inline-block tooltipstered"
+                                    style="color: #f2f2f29e;margin: 0;margin-left: 3px;background-image: linear-gradient(45deg, #93c34a 0%, #52af4c 100%);
+                                    box-shadow: 0 3px 6px rgba(0, 0, 0, .3), inset 0 0 10px 3px rgba(0, 0, 0, .2), 0 3px 20px #88c04aad, 0 3px 35px rgba(103, 174, 74, 0.28);">Copy Link
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+             
+
+
+                <div class="intro-y box" style="margin-top: 22px;background: #2e2e49; margin-bottom: 30px;">
+                    <div class="box-header flex flex-col sm:flex-row items-center p-5 border-b border-gray-200"
+                        style=" border: 0;padding: 12px;">
+                        <h2 class="font-medium text-base mr-auto"
+                            style="color: #a0aec0; font-weight: 900; text-align: center;margin: 0px auto;font-size: 22px; text-shadow: 0px 0px 5px #969cb81f;">
+                            Page FaQ</h2>
+                    </div>
+                    <div class="p-5" id="basic-accordion">
+                        <div class="preview">
+                            <div class="accordion">
+                                <div class="accordion__pane border-b border-gray-200 pb-4 active"
+                                    style="border-bottom: 5px solid #363655b5;">
+                                    <a href="javascript:;" class="accordion__pane__toggle font-medium block"
+                                        style="color: #afbfdb94; font-weight: 600;">What are auction lobbies ?</a>
+                                    <div class="accordion__pane__content mt-3 text-gray-700 leading-relaxed"
+                                        style="display: block; color: rgba(138, 145, 168, 0.62);">Auction lobbies are
+                                        Daily Auctions that
+                                        offer T2X tokens for TRON based on the
+                                        T2X and TRON pool at the end of the day.</div>
+                                </div>
+                                <div class="accordion__pane border-b border-gray-200 py-4"
+                                    style="border-bottom: 5px solid #363655b5;">
+                                    <a href="javascript:;" class="accordion__pane__toggle font-medium block"
+                                        style="color: #afbfdb94; font-weight: 600;">How much T2X do lobbies pay ?</a>
+                                    <div class="accordion__pane__content mt-3 text-gray-700 leading-relaxed"
+                                        style="display: none;  color: rgba(138, 145, 168, 0.62);">Lobbies T2X pool will
+                                        start from 5 million
+                                        T2X per day and goes until 1 million over
+                                        the next 365 days but never goes lower
+                                        than 1 million tokens per day.</div>
+                                </div>
+
+                                <div class="accordion__pane border-b border-gray-200 py-4"
+                                    style="border-bottom: 5px solid #363655b5;">
+                                    <a href="javascript:;" class="accordion__pane__toggle font-medium block"
+                                        style="color: #afbfdb94; font-weight: 600;">Buying tokens from exchnage or
+                                        participating in auction ?</a>
+                                    <div class="accordion__pane__content mt-3 text-gray-700 leading-relaxed"
+                                        style="display: none;  color: rgba(138, 145, 168, 0.62);">Auction lobbies are an
+                                        other way to buy T2X tokens that might
+                                        be more profitable that purchasing on exchanges. Plus the TRX
+                                        spent is rewarded back to Stakers.</div>
+                                </div>
+
+                                <div class="accordion__pane border-b border-gray-200 py-4"
+                                    style="border-bottom: 5px solid #363655b5;">
+                                    <a href="javascript:;" class="accordion__pane__toggle font-medium block"
+                                        style="color: #afbfdb94; font-weight: 600;">Where does all the TRON go ?</a>
+                                    <div class="accordion__pane__content mt-3 text-gray-700 leading-relaxed"
+                                        style="display: none;  color: rgba(138, 145, 168, 0.62);">Dividends, well at
+                                        least 95% of them !!
+                                        The other 5% reserve for promotion and platform
+                                        development costs.</div>
+                                </div>
+
+                                <div class="accordion__pane border-b border-gray-200 py-4"
+                                    style="border-bottom: 5px solid #363655b5;">
+                                    <a href="javascript:;" class="accordion__pane__toggle font-medium block"
+                                        style="color: #afbfdb94; font-weight: 600;">When do lobbies end ?</a>
+                                    <div class="accordion__pane__content mt-3 text-gray-700 leading-relaxed"
+                                        style="display: none;  color: rgba(138, 145, 168, 0.62);">Lobbies are daily,
+                                        Every day at 00:00 UTC</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-text col-span-12 lg:col-span-8 xxl:col-span-9 intro-y box"
+                style="margin-top:20px; background: #2e2e49; border-radius: 9px;box-shadow: 0px 0px 18px #1d1f2fb0; overflow: auto;">
+                <div class="p-5" style="padding: 0; margin-bottom: 10px;">
+                    <div class="box-header intro-y inbox box mt-5"
+                        style="box-shadow: 0px 0px 18px #1d1f2fb0 ">
+                        <div class="p-5 flex flex-col-reverse sm:flex-row text-gray-600 border-b border-gray-200"
+                            style="padding: 10px;padding-left: 10px; border: 0;">
+							
+							<table class="holder-table" style="width: 100%; overflow: auto;">
+							
+								<tr style="width: 100%; overflow: auto;">
+									<td class=""
+										style="text-align:center; font-weight: 900;">
+										<span class="inbox__item--highlight">Day</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;">
+										<img class="mobile-image" src="./dist/imgs/t2x-icon-2.png"
+											style="display: inline-block;width: 16px;margin-left: 0%;">
+										<span class="inbox__item--highlight">Pool</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;padding-left: 0%;">
+										<span class="inbox__item--highlight" style="margin-left: 8%;">T2X/TRX</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;padding-left: 0%;">
+										<span class="inbox__item--highlight" style="margin-left: 8%;">State</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;padding-left: 0%;">
+										<img class="mobile-image" src="./dist/imgs/t2x-icon-2.png"
+											style="display: inline-block;width: 16px;margin-left: 0%;">
+										<span class="inbox__item--highlight">You'll</span>
+										<br>
+										<span>Receive</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;">
+										<span class="inbox__item--highlight">Your</span>
+										<img class="mobile-image" src="./dist/imgs/tron-icon-2.png"
+											style="display: inline-block;width: 15px;margin-left: 0%;">
+										<br>
+										<span>Entry</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;">
+										<span class="inbox__item--highlight">Total</span>
+										<img class="mobile-image" src="./dist/imgs/tron-icon-2.png"
+											style="display: inline-block; width: 15px;margin-left: 0%;">
+										<br>
+										<span>Entries</span>
+									</td>
+
+									<td class=""
+										style="text-align:center; font-weight: 900;">
+										<span class="inbox__item--highlight"></span>
+									</td>
+								</tr>
+								
+								<tr class="box zoom-in px-4 py-4 mb-3"
+									style="padding: 8px 0px; cursor: auto; background-color: #49496a; color: #b4c5e1; height: 47px; overflow: auto;">
+										
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;">
+										<span class="current-day-day inbox__item--highlight">--</span>
+									</td>
+
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;">
+										<span class="current-day-pool inbox__item--highlight">--</span>
+									</td>
+
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;padding-left: 0%;">
+										<span class="current-day-ratio inbox__item--highlight">--</span>
+									</td>
+
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;padding-left: 0%;">
+										<span class="current-day-state inbox__item--highlight">OPEN</span>
+									</td>
+
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;padding-left: 0%;">
+										<span class="current-day-rec inbox__item--highlight">--</span>
+									</td>
+
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;">
+										<span class="current-day-user inbox__item--highlight">--</span>
+									</td>
+
+									<td class="w-64 sm:w-auto truncate"
+										style="margin-top: 25px; text-align:center; font-weight: 900;">
+										<span class="current-day-total inbox__item--highlight">--</span>
+									</td>
+
+									<td style="margin-top: 25px;">
+										<div>
+											<a class="btn-auction-enter button w-24 shadow-md mr-1 mb-2 bg-theme-1 text-white"
+												href="javascript:;" data-toggle="modal" data-target="#button-modal-enter-lobby"
+												style="margin: 0; width: 81%; background-color: #673AB7; padding: 3px 3px 3px 3px;"
+												onclick="enterLobby('btn-auction-enter')">
+												<span class="btn-auction-enter-txt" style="width: auto; margin: 0px auto;">ENTER
+												</span>
+												<div class="btn-auction-enter-load"
+													style="padding-right: calc(50% - 8px); display:none">
+													<i data-loading-icon="oval" data-color="white" class="w-4 h-4 ml-auto"
+														style="display: none;">
+													</i>
+												</div>
+											</a>
+										</div>
+									</td>
+								</tr>
+								
+							</table>
+							
+						</div>
+                    </div>
+					<table class="holder-table-10" style="width: 100%; overflow: auto;"></table>
+					<div class="items-center justify-center auction-display" style="margin: 0px auto; text-align: center; margin-bottom: 5px; margin-top: 5px;">---</div>
+					<table class="holder-table-all" style="width: 100%; overflow: auto;"></table>
+					<div class="items-center justify-center auction-display-end" style="margin: 0px auto; text-align: center;"></div>
+                </div>
+			</div>
+		</div>
+       </div>
+    </div>
+    <!-- END: Content -->
+    <!-- BEGIN: JS Assets-->
+	<style>
+		@media only screen and (max-width: 700px){
+			.mobile-text{
+				font-size: 8px !important;
+			}
+		}
+		@media only screen and (max-width: 700px){
+			.mobile-image {
+				width: 8px !important;
+			}
+		}
+	</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+
+    <script src="./shared/header.js"></script>
+	<script src="./js/TronWeb.js"></script>
+	<script src="./js/auctionChart.js"></script>
+    <script src="./js/auction.js"></script>
+	<script src="../panel/server/serverAuction.js"></script>
+	<script src="./js/core.js"></script>
+    <script src="./js/refer.js"></script>
+    <!--<script src="./js/dividends.js"></script>-->
+
+
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script> -->
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+﻿.table th {
+    font-weight: 500;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+}
+.b2x-blink{
+    animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #f0f;    }
+	25%{    color: transparent; }
+    50%{    color: #0f0; }
+    75%{    color: transparent; }
+    100%{   color: #f0f;    }
+}
+.top-nav, li{
+	margin: 0 auto !important;
+	display: table !important;
+	left: 0px !important;
+	right: 0px !important;
+	text-align: center;
+}
+.non-t2x-headers{
+	border: 2px solid #2e2e49; 
+	border-radius: 999px; 
+	margin-bottom: 3px; 
+	font-size: 12px;
+	display: none;
+}
+.non-t2x-headers-2{
+	border: 2px solid #2e2e49; 
+	border-radius: 999px; 
+	margin-bottom: 3px; 
+	font-size: 12px;
+	display: none;
+}
+@media only screen and (max-width: 1100px){
+  .top-nav{
+	display: none !important;
+  }
+}
+
+.highcharts-button-box{
+	fill: #673AB7;
+	stroke: #673AB7;
+}
+
+.table td {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    text-align: center;
+    width: 1px;
+}
+
+.tb-ds {
+    max-width: 5.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tb-nactive-row {
+    background: #2d2d47;
+}
+.tb-active-row {
+    background: #31314d;
+}
+
+.tb-active-row-2 {
+    background-color: #f7fafc;
+}
+
+.bg-theme-100 {
+    background-color: #8bc34a;
+}
+
+.bg-theme-101 {
+    background-color: #ff5822;
+}
+
+
+body {
+    background: #14142b;
+}
+
+input {
+    background: #222239;
+    
+}
+
+.input:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #5a697c59 !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.stake-btn:hover {
+    width: 98% !important;
+}
+
+.transfer-btn:hover {
+    width: 45% !important;
+}
+
+.box-header {
+    border-bottom: 3px solid #120f2757 !important;
+    background: #2f2f4c85;
+    border-radius: 9px;
+    box-shadow: 0px 4px 8px #04041747 !important;
+}
+
+.box-body {
+    background: #3c3c63;
+    border-radius: 9px !important;
+    box-shadow: 0px 0px 18px #040417b0 !important;
+}
+
+.row-body {
+    border: 0px !important;
+}
+
+.item-slm {
+    background-color: #363655 !important;
+    color: #5e6a80 !important;
+}
+
+.item-sln {
+    background-color: #3c3c5d !important;
+    color: #5e6a80 !important;
+}
+
+.ro-head {
+    background: #31314d !important;
+    border: 0px !important;
+}
+
+.progress-b {
+    background: #26263c94;
+    height: 7px;
+    border-radius: 50px;
+    margin: 7px 8px 0px 7px;
+    width: 90%;
+}
+
+.progress-bn {
+    height: 7px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(103, 32, 201, 1) 0%, rgba(206, 45, 222, 1) 100%);
+    box-shadow: 0px 0px 8px #8424cdb5
+}
+
+.highchart-credits {
+	
+	background: #2e2e49;
+	color: #2e2e49;
+	
+
+}
+
+.ct-series-a .ct-bar {
+    /* Colour of your bars */
+    stroke: red;
+    /* The width of your bars */
+    stroke-width: 20px;
+    /* Yes! Dashed bars! */
+    stroke-dasharray: 20px;
+    /* Maybe you like round corners on your bars? */
+    stroke-linecap: round;
+  }

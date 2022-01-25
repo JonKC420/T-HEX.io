@@ -1,0 +1,5 @@
+<div class="p-5" style="padding: 0;">
+
+    <div class="p-5" style="padding: 0; height:30vh">
+        <div id="container-auctionchart" style="height: fit-content; min-width: 310px; color: #ccccb3"></div>
+    </div>

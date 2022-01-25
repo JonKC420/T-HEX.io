@@ -1,0 +1,400 @@
+Uri: https://t2xtoken.io/panel/stake.html
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\stake.html
+Content Type: text/html
+
+Uri: https://t2xtoken.io/img/T2X-logo-s.png
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\img\T2X-logo-s.png
+Content Type: image/png
+
+Uri: https://t2xtoken.io/panel/dist/imgs/t2x-icon-2.png
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\imgs\t2x-icon-2.png
+Content Type: image/png
+
+Uri: https://t2xtoken.io/panel/dist/custom.css
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\custom.css
+Content Type: text/css
+
+Uri: https://t2xtoken.io/panel/dist/css/app.css
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\css\app.css
+Content Type: text/css
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-173014643-1
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\gtag\js.js
+Content Type: application/javascript
+
+Uri: https://t2xtoken.io/panel/dist/imgs/tron-icon-2.png
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\imgs\tron-icon-2.png
+Content Type: image/png
+
+Uri: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\ajax\libs\jquery\3.5.1\jquery.min.js
+Content Type: text/javascript
+
+Uri: https://t2xtoken.io/panel/shared/header.js
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\shared\header.js
+Content Type: application/javascript
+
+Uri: https://t2xtoken.io/panel/js/stake.js
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\js\stake.js
+Content Type: application/javascript
+
+Uri: https://t2xtoken.io/panel/js/core.js
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\js\core.js
+Content Type: application/javascript
+
+Uri: https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\maps\documentation\javascript\examples\markerclusterer\markerclusterer.js
+Content Type: application/javascript
+
+Uri: https://t2xtoken.io/panel/dist/js/app.js
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\js\app.js
+Content Type: application/javascript
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEz0dL-vwnYh2eg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEz0dL-vwnYh2eg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEzQdL-vwnYh2eg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEzQdL-vwnYh2eg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEzwdL-vwnYh2eg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEzwdL-vwnYh2eg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEzMdL-vwnYh2eg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEzMdL-vwnYh2eg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEz8dL-vwnYh2eg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEz8dL-vwnYh2eg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEz4dL-vwnYh2eg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEz4dL-vwnYh2eg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrEzAdL-vwnYg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOiCnqEu92Fr1Mu51QrEzAdL-vwnYg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc3CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc3CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc-CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc-CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc2CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc2CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc5CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc5CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc1CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc1CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc0CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc0CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc6CsTYl4BO.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TjASc6CsTYl4BO.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xFIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xFIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xMIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xMIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xEIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xEIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xLIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xLIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xHIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xHIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xGIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xGIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xIIzIXKMny.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1Mu51xIIzIXKMny.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc3CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc3CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc-CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc-CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc2CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc2CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc5CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc5CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc1CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc1CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc0CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc0CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc6CsTYl4BO.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51S7ACc6CsTYl4BO.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic3CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic3CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic-CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic-CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic2CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic2CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic5CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic5CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic1CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic1CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic0CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic0CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBic6CsTYl4BO.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TzBic6CsTYl4BO.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc3CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc3CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc-CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc-CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc2CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc2CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc5CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc5CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc1CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc1CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc0CsTYl4BOQ3o.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc0CsTYl4BOQ3o.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBCc6CsTYl4BO.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOjCnqEu92Fr1Mu51TLBCc6CsTYl4BO.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxFIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxFIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxMIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxMIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxEIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxEIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxLIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxLIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxHIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxHIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxGIzIXKMnyrYk.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxGIzIXKMnyrYk.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzIXKMny.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOkCnqEu92Fr1MmgVxIIzIXKMny.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfCRc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfCRc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfABc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfABc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfCBc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfCBc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfBxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfCxc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfCxc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfChc4AMP6lbBP.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfChc4AMP6lbBP.woff2
+Content Type: font/woff2
+
+Uri: https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\s\roboto\v20\KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2
+Content Type: font/woff2
+
+Uri: https://t2xtoken.io/panel/dist/css/ajax-loader.gif
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\css\ajax-loader.gif
+Content Type: image/gif
+
+Uri: https://t2xtoken.io/panel/dist/imgs/brd1.png
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\imgs\brd1.png
+Content Type: image/png
+
+Uri: https://t2xtoken.io/panel/dist/fonts/summernote/summernote.woff
+File Name: C:\Users\Jonat\OneDrive\Desktop\t2xtoken.io\panel\t2xtoken.io\panel\dist\fonts\summernote\summernote.woff
+Content Type: font/woff
+

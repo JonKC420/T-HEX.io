@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<!-- BEGIN: Head -->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="../gtag/js.js?id=UA-173014643-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-173014643-1');
+    </script>
+
+    <meta charset="utf-8">
+    <link href="dist/imgs/t2x-icon-2.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Defi Built On The Tron Blockchain">
+    <meta name="keywords" content="t2x, crypto, bitcoin, tron, staking, t2x token">
+    <meta name="author" content="LEFT4CODE">
+    <title>TEX - Stake</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/custom.css">
+    <link rel="stylesheet" href="dist/css/app.css">
+
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+
+    <div class="shared-header" style="height: 86px;"></div>
+	<div class="transferHeader"></div>
+	<div class="maintenance"></div>
+    <div class="total-burned" style="text-align: center;  color:rgb(224, 15, 15); font-size: 20px; padding-bottom: 15px; margin-top: -10px;"></div>
+
+    <div class="alert-holder">
+        <div class="alert-tb rounded-md flex items-center px-5 py-4 mb-2 bg-theme-18 text-theme-9" style="display:none; position: fixed;width: fit-content; right: 10px;top: 9px;z-index: 10000;opacity: 0.96; padding-left: 30px; padding-right: 30px;">
+            <i data-feather="alert-circle" class="w-6 h-6 mr-2" style="display: inline-block;"></i><span class="alert-inner" style="display: inline-block;"></span>
+        </div>
+
+        <div class="alert-tb rounded-md flex items-center px-5 py-4 mb-2 bg-theme-17 text-theme-11" style="display:none; position: fixed;width: fit-content; right: 10px;top: 9px;z-index: 10000;opacity: 0.96; padding-left: 30px; padding-right: 30px;">
+            <i data-feather="alert-circle" class="w-6 h-6 mr-2" style="display: inline-block;"></i><span class="alert-inner" style="display: inline-block;"></span>
+        </div>
+
+        <div class="alert-tb rounded-md flex items-center px-5 py-4 mb-2 bg-theme-31 text-theme-6" style="display:none; position: fixed;width: fit-content; right: 10px;top: 9px;z-index: 10000;opacity: 0.96; padding-left: 30px; padding-right: 30px;">
+            <i data-feather="alert-circle" class="w-6 h-6 mr-2" style="display: inline-block;"></i><span class="alert-inner" style="display: inline-block;"></span>
+        </div>
+    </div>
+
+
+    <nav class="top-nav nav-menu"></nav>
+
+    <!-- BEGIN: Content -->
+    <div class="content" style="background: #01081E;box-shadow: 0px 0px 14px #15151e8a; overflow: hidden;">
+
+
+
+
+        <div class="grid grid-cols-12 gap-6">
+            <!-- BEGIN: Profile Menu -->
+            <div class="col-span-12 lg:col-span-4 xxl:col-span-3 flex lg:block flex-col-reverse" style="padding-top: 20px;">
+                <div class="intro-y inbox box mt-5" style="margin-top: 0px; background: #01081E;">
+
+                    <div class="box-body col-span-12 lg:col-span-5 box" style="background: #394054; border-radius: 9px;box-shadow: 0px 0px 18px #1d1f2fb0;">
+                        <div class="box-header flex items-center p-5 border-b border-gray-200" style="padding-top: 7px;padding-bottom: 7px;padding-right: 8px;">
+                            <h2 class="font-medium text-base mr-auto" style="color: #a0aec0; font-weight: 900;">
+                                Stake
+                            </h2>
+
+                            <button class="your-token-balance-hd button w-24 mr-1 mb-2 bg-gray-200 text-gray-500" style=" margin: 0; width: auto; background: #3a3a57;">Your T2X balance: --
+                            </button>
+
+                        </div>
+                        <div class="p-5" style="padding: 0;">
+                            <div class="border-gray-200">
+                                <div class="" style="padding: 20px; padding-top: 3px; margin-top: 20px;" style="padding-bottom: 0px;">
+
+                                    <div class="intro-y col-span-12 sm:col-span-6" style="margin-top: 20px;">
+                                        <div style="font-weight: 900;color: #a0adbf; padding-bottom: 3px;"> Amount to
+                                            Stake:</div>
+                                        <input type="number" class="input w-full border flex-1 stake-inp-amount" oninput="stakeChangeAmount()" placeholder="1000.00" style="color: #91979f; font-weight: 600;background: linear-gradient(rgba(43, 43, 68, 0.57), rgba(43, 43, 68, 0.57)), url(../img/T2X-logo-s.png) no-repeat right 8px center; background-size: 24px; background-color: rgba(43, 43, 68, 0.91);">
+                                    </div>
+
+                                    <div class="intro-y col-span-12 sm:col-span-6" style="margin-top: 25px;">
+                                        <div style="font-weight: 900;color: #a0adbf; padding-bottom: 3px;"> Days to
+                                            Stake:</div>
+                                        <input type="number" class="input w-full border flex-1 stake-inp-day" oninput="stakeChangeDays()" placeholder="10" style="color: #91979f;
+                                            font-weight: 600;">
+                                    </div>
+
+                                    <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5" style="margin-top: 50px;">
+
+
+
+                                        <div style="width: 100%; text-align: center;">
+                                            <button onclick="doStake()" class="stake-btn button w-24 shadow-md inline-block mr-1 mb-2 bg-theme-1 text-white inline-flex items-center" style="transition: all 0.20s ease-in-out; background-image: linear-gradient(45deg, #fd6035 0%, #f75878 100%); box-shadow: 0 3px 6px rgba(0, 0, 0, .3), inset 0 0 10px 3px rgba(0, 0, 0, .2), 0 3px 20px #f6597282, 0 3px 35px rgba(250, 95, 59, 0.48); width: 94%;
+                                            height: 37px;width: 90%;margin: 0;color: #eae8e7;font-size: 20px;">
+                                                <span class="btn-usertransfer-txt" style="margin: 0px auto;">
+                                                    Stake
+                                                </span>
+                                                <div class="btn-usertransfer-load" style="padding-right: calc(50% - 8px); display:none">
+                                                    <i data-loading-icon="oval" data-color="white" class="w-4 h-4 ml-auto" style="display: none;">
+                                                    </i>
+                                                </div>
+                                            </button>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="mt-6 lg:mt-0 flex-1 flex items-center justify-center px-5 border-t lg:border-0 border-gray-200 pt-5 lg:pt-0" style="padding-top: 30px;">
+                                        <div class="text-center rounded-md w-20 py-3">
+                                            <div class="font-semibold text-theme-1 text-lg st-val-1" style="color: #bcc1d1a6">--</div>
+                                            <div class="text-gray-500">Start day</div>
+                                        </div>
+                                        <div class="text-center rounded-md w-20 py-3" style="margin-right: 10px;margin-left: 10px;">
+                                            <div class="font-semibold text-theme-1 text-lg st-val-2" style="color: #bcc1d1a6">--</div>
+                                            <div class="text-gray-500">Last full day</div>
+                                        </div>
+                                        <div class="text-center rounded-md w-20 py-3">
+                                            <div class="font-semibold text-theme-1 text-lg st-val-3" style="color: #bcc1d1a6">--</div>
+                                            <div class="text-gray-500">End day</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="intro-y box" style="margin-top: 22px;background: #2e2e49; margin-bottom: 30px;">
+                    <div class="p-5" id="basic-accordion">
+						<div class="accordion__pane border-b border-gray-200 pb-4">
+							<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">
+								<div class="box-header flex flex-col sm:flex-row items-center p-5 border-b border-gray-200" style=" border: 0;padding: 12px;">
+									<h2 class="font-medium text-base mr-auto" style="color: #a0aec0; font-weight: 900; text-align: center;margin: 0px auto;font-size: 22px; text-shadow: 0px 0px 5px #969cb81f;">
+										Page FaQ</h2>
+								</div>
+							</a>
+							<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none; color: rgba(138, 145, 168, 0.62);">
+									<div class="p-5" id="basic-accordion">
+										<div class="accordion__pane border-b border-gray-200 pb-4" style="border-bottom: 5px solid #363655b5;">
+
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">What is staking?</a>
+
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none; color: rgba(138, 145, 168, 0.62);">You can stake your t2x
+												token for a fixed
+												number of days to earn interest on them. Make sure to stake more than 5 days to
+												be eligible to get bonus days reward. <br> At the end of every day a daily stake
+												pool
+												of T2X tokens will be calculated and it
+												will be shared and allocate to all the
+												open stakes between all the open stakes
+												based on their staked tokens amount
+												which will be available for user to
+												withdraw when the stake ends.</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">How is stake pool calculated ?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">[T2X supply * 50000 /
+												5.42% inflation per year ], this daily pool will be
+												distributed between all the Stakers as their stake
+												interest.</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">Bonus for Staking ?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">For starting a stake
+												you get bonus reward for your stake which is
+												based on the amount and time that you are staking</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">What is a reward day ?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">Every stake will get a
+												bonus day every 5 days that it
+												has been active, stakes get 2X interest on bonus
+												days. Example: creating a stake at day 4 for 15 days gives
+												this stake 3 bonus at days 10,15, and day 20 etc.</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">What if i end my stake early ?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">You are subject up to a 100% penalty depending on your stake terms.</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">Do i get TRON dividends for staking
+												?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">Yes! One of the
+												benefits of Staking T2X is
+												TRON dividends. At the end of each day
+												a TRON dividends pool will be calculated
+												and allocated to all the open stakes
+												based on their stake amount. The dividends pool comes from the daily
+												auction lobby total entry amount.</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">How is dividends pool calculated
+												?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">95% of all TRX that
+												enters the daily Auction Lobby
+												is pooled and distributed back out to Stakers.</div>
+										</div>
+										<div class="accordion__pane border-b border-gray-200 py-4" style="border-bottom: 5px solid #363655b5;">
+											<a href="javascript:;" class="accordion__pane__toggle font-medium block" style="color: #afbfdb94; font-weight: 600;">When will I receive my TRON
+												dividends ?</a>
+											<div class="accordion__pane__content mt-3 text-gray-600 leading-relaxed" style="display: none;  color: rgba(138, 145, 168, 0.62);">After you exit your
+												stakes you will receive your
+												TRON dividends</div>
+										</div>
+									</div>
+								</div>
+						</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- END: Profile Menu -->
+            <div class="col-span-12 lg:col-span-8 xxl:col-span-9">
+                <!-- BEGIN: Daily Sales -->
+                <div class="box-body intro-y box lg:mt-5" style="background: #2e2e49; border-radius: 9px; box-shadow: 0px 0px 18px #1d1f2fb0;">
+                    <div class="box-header flex items-center px-5 py-5 sm:py-3 border-b border-gray-200" style="height: 53.76px; padding: 8px; padding-left: 20px; border-bottom: 3px solid #27273d57; background: #41416329; border-radius: 9px;box-shadow: 0px 4px 8px #1d1f2f47;">
+                        <h2 class="font-medium text-base mr-auto" style="color: #a0aec0; font-weight: 900;">
+                            Stake Bonus Info
+                        </h2>
+
+                        <button class="button w-24 mr-1 mb-2 bg-gray-200 text-gray-500" style=" margin: 0; width: auto; padding: 5px; background: #3a3a57;">
+                            <div href="javascript:;" class="mobile-text bounty-days-el tooltip text-gray-500" title="Increase your stake length for more BonusDays!" style="padding: 3px 8px; font-weight: 600; ">Eligible for 0 BonusDays</div>
+                        </button>
+                    </div>
+                    <div class="p-5">
+
+                        <div class="flex flex-col lg:flex-row border-b border-gray-200 pb-5 -mx-5" style="border-bottom: 3px solid #27273d57;">
+                            <div class="flex flex-1 px-10 items-center justify-center lg:justify-start" style="padding: 10px;">
+                                <div class="ml-5">
+                                    <div class="text-gray-500">Time Bonus:</div>
+                                    <div class="text-gray-500">Value Bonus:</div>
+                                    <div class="text-gray-500" style=" padding-top: 10px;font-weight: 600;">Total:</div>
+                                    <div class="text-gray-500" style="padding-top: 6px;font-weight: 600;">Effective T2X:
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="text-gray-500 st-val-5" style="color: #91C714;">+ 0.000 T2X</div>
+                                    <div class="text-gray-500 st-val-4" style="color: #91C714;">+ 0.000 T2X</div>
+                                    <div class="text-gray-500 st-val-6" style=" padding-top: 10px;font-weight: 600;">
+                                        0.000 T2X
+                                    </div>
+                                    <div class="text-gray-500 st-val-7" style=" padding-top: 6px;font-weight: 600;">
+                                        0.000 T2X
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-1 px-2 items-center justify-center lg:justify-start" style="border-right: 3.5px solid #27273d57; border-left: 3.5px solid #27273d57;">
+                                <div class="ml-5">
+                                    <div class="text-gray-500" style="font-weight: 600;">Today Div Pool:</div>
+                                    <div class="text-gray-500" style=" padding-top: 10px; font-weight: 600; ">Average Daily Div Pool:</div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="text-gray-500 st-val-8" style="font-weight: 600;color: #f6596b; text-shadow: 0px 0px 8px #f65a69;">..
+                                        TRX</div>
+                                    <div class="text-gray-500 st-val-9" style=" padding-top: 10px;font-weight: 500;">..
+                                        TRX
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex flex-1 px-2 items-center justify-center lg:justify-start">
+                                <div class="ml-5">
+                                    <div class="text-gray-500">Share Rate:</div>
+                                    <!-- <div class="text-gray-500">Stake Shares:</div>
+                                    <div class="text-gray-500" style="padding-top: 10px; font-weight: 600;">% Gain:
+                                    </div>
+                                    <div class="text-gray-500" style="padding-top: 6px; font-weight: 600;">% APY</div> -->
+                                </div>
+                                <div class="ml-5">
+                                    <div class="text-gray-500 st-val-12">- M/T2X</div>
+                                    <!-- <div class="text-gray-500 st-val-13">0</div>
+                                    <div class="text-gray-500 st-val-10"
+                                        style="padding-top: 10px;font-weight: 600; color: #4c96d1;">0.000%</div>
+                                    <div class="text-gray-500 st-val-11"
+                                        style=" padding-top: 6px;font-weight: 600; color: #4c96d1;">0.000%</div> -->
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Daily Sales -->
+
+                <div class="mobile-text box-body intro-y box lg:mt-5" style="margin-top: 30px; background: #2e2e49; margin-bottom: 30px;">
+                    <div class="box-header flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
+                        <h2 class="font-medium text-base mr-auto" style="color: #a0aec0; font-weight: 900;">
+                            My Active Stakes
+                        </h2>
+
+                        <button class="button w-24 mr-1 mb-2 bg-gray-200 text-gray-500" style=" margin: 0; width: auto; padding: 5px;background: #27273d; box-shadow: 0px 0px 10px #26273ccc;" onclick="refreshMyStakes()">
+                            <i data-feather="refresh-ccw" class="mx-auto"></i>
+                        </button>
+                    </div>
+                    <div class="p-5" style="padding: 0; overflow-x: auto;">
+
+                        <div class="p-5" style="padding: 0;">
+                            <div class="intro-y inbox box mt-5" style="margin: 0; box-shadow: none;">
+                                <div class="ro-head p-5 flex flex-col-reverse sm:flex-row text-gray-500 border-b border-gray-200" style="padding: 10px; padding-left: 5px;">
+
+                                    <table class="my-stakes-table" style="width: 100%; overflow: auto;">
+
+										<tr style="width: 100%; overflow: auto;">
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<span class="inbox__item--highlight">Start<br>Day</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;padding-left: 0%;">
+												<span class="inbox__item--highlight" style="margin-left: 8%;">End<br>Day</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;padding-left: 0%;">
+												<span class="inbox__item--highlight" style="margin-left: 8%;">Stake<br>Progress</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;padding-left: 0%;">
+												<span class="inbox__item--highlight">Staked
+												<br>
+												<img class="mobile-image" src="dist/imgs/t2x-icon-2.png" style="display: inline-block;width: 16px;margin-right: 0%;">
+												T2X</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<span class="inbox__item--highlight">Stake<br>Shares</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<span class="inbox__item--highlight">Bonus<br>Rewards</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<img class="mobile-image" src="dist/imgs/tron-icon-2.png" style="display: inline-block;width: 15px;margin-right: 0%;">
+												<span class="inbox__item--highlight">TRX
+												<br>
+												Rewards</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<span class="inbox__item--highlight">Interest<br>Earned</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<span class="inbox__item--highlight">Total<br>Value</span>
+											</td>
+
+											<td class="" style="text-align:center; font-weight: 900;">
+												<span class="inbox__item--highlight">Action</span>
+											</td>
+
+
+										</tr>
+
+									</table>
+
+                                </div>
+                                <div class="active-stake-loading" style="width: 100%; background-color: #2e2e49; overflow: auto;">
+                                    <div class="intro-y" style="text-align: center; background-color: #3d3d5e;">
+                                        <span style="font-weight: 900;font-size: 16px;color: #d1dbe7;">Loading Stake Data...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mobile-text box-body intro-y box lg:mt-5" style="background: #2e2e49;">
+                    <div class="box-header flex items-center px-5 py-5 sm:py-3 border-b border-gray-200">
+                        <h2 class="font-medium text-base mr-auto" style="color: #a0aec0; font-weight: 900;">
+                            Recently Ended Stakes
+                        </h2>
+
+                        <button class="button w-24 mr-1 mb-2 bg-gray-200 text-gray-500" style=" margin: 0; width: auto; padding: 5px;background: #27273d;box-shadow: 0px 0px 10px #26273ccc;" onclick="refreshMyEndedStakes()">
+                            <i data-feather="refresh-ccw" class="mx-auto"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="p-5" style="padding: 0;" style="background: #2e2e49;">
+                        <div class="intro-y inbox box mt-5" style="margin: 0; box-shadow: none;">
+                            <div class="ro-head p-5 flex flex-col-reverse sm:flex-row text-gray-500 border-b border-gray-200" style="padding: 10px; padding-left: 5px;">
+
+								<table class="my-ended-stakes-table" style="width: 100%; overflow: auto;">
+
+									<tr style="width: 100%; overflow: auto;">
+
+										<th class="" style="text-align:center; font-weight: 900;">
+											<span class="inbox__item--highlight">Start<br>Day</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;padding-left: 0%;">
+											<span class="inbox__item--highlight" style="margin-left: 8%;">End<br>Day</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;padding-left: 0%;">
+											<span class="inbox__item--highlight" style="margin-left: 8%;">Stake<br>Progress</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;padding-left: 0%;">
+											<span class="inbox__item--highlight">Staked
+											<br>
+											<img class="mobile-image" src="dist/imgs/t2x-icon-2.png" style="display: inline-block;width: 16px;margin-right: 0%;">
+											T2X</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;">
+											<span class="inbox__item--highlight">Stake<br>Shares</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;">
+											<span class="inbox__item--highlight">Bonus<br>T2X</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;">
+											<span class="inbox__item--highlight">T2X<br>Received</span>
+										</th>
+
+										<th class="" style="text-align:center; font-weight: 900;">
+											<span class="inbox__item--highlight">TRX
+											<br>
+											Received</span>
+										</th>
+
+									</tr>
+
+								</table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn-f-style" href="#" data-title="Awesome Button"></a>
+    </div>
+    <!-- END: Content -->
+    <!-- BEGIN: JS Assets-->+
+	<style>
+		@media only screen and (max-width: 700px){
+			.mobile-text{
+				font-size: 8px !important;
+			}
+		}
+		@media only screen and (max-width: 700px){
+			.mobile-image {
+				width: 8px !important;
+			}
+		}
+	</style>
+    <script src="../ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="shared/header.js"></script>
+    <script src="js/stake.js"></script>
+    <script src="js/core.js"></script>
+    <script src="../maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script> -->
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+</html>
